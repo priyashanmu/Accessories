@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<style>
+body
+{
+background-image: url("hnm.jpg");
+  background-repeat: no-repeat; 
+background-size:cover;  
+}
+
+#m
+{
+color:white
+}
+footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+#a
+{
+input[type=text] {
+    width: 230px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+</style>
+<div id="e">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="fff.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="f.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div id="a">
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+</div>
+<div id="m">
+<h1>Women Accessories</h1>
+<p class="text-white">The women's wearables market is heating up, with plenty of fitness trackers and smart jewelry to choose from—but somehow it's still hard to 
+find devices that are beautiful, functional, and also reasonably priced..</p>
+<p>The Bellabeat Leaf Urban, which launches today, hits all three marks. It's a pebble-like device with a leaf pattern on it (think Elven elegance) 
+and can be worn as a bracelet, a necklace, or a clip. 
+It's designed to mask the technology inside, so it looks like a piece of jewelry you might wear to the office, dinner, or on the weekend.</p>
+
+<div id="r">
+<center>
+<a href="about.html" class="btn btn-success" role="button">Find out more</a>
+</center>
+</div>
+
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+</div>
+<div>
+
+
+<footer class="container-fluid text-center">
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+</footer>
+</div>
+</body>
+</html>

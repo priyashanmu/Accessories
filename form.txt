@@ -1,0 +1,51 @@
+
+<html lang="en">
+<head>
+  <title>B</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style>
+form
+{
+
+width:600px;
+background-color:gray;
+padding:40px;
+margin:40px;
+}
+fieldset
+{
+
+width:500px;
+background-color:pink;
+padding:40px;
+margin:40px;
+}
+</style>
+<div id="a">
+  <h2>Login Page</h2>
+  <form role="form">
+    <div class="form">
+      <label for="User Name">User Name:</label>
+      <input type="text" class="form-control" id="User Name" placeholder="Enter user name">
+    </div>
+    <div class="form2">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="button" class="btn btn-success ribbon">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+
+</html>
