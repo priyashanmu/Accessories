@@ -76,14 +76,14 @@ background-size:cover;
 <div class="carousel-inner" role="listbox">
     <div class="item active">
      
- <img src="<c:url value='/resources/image/j3.jpg'/>"  width="504" height="436">
+ <img src="<c:url value='/resources/image/ear4.jpg'/>"  width="504" height="436">
     </div>
 
     <div class="item">
-      <img src="<c:url value='/resources/image/j4.jpg'/>" width="504" height="236">
+      <img src="<c:url value='/resources/image/ear2.jpg'/>" width="504" height="236">
     </div>
     <div class="item">
-      <img src="<c:url value='/resources/image/k1.jpg'/>" width="604" height="336">
+      <img src="<c:url value='/resources/image/ear11.jpg'/>" width="604" height="336">
     </div>
      
 
@@ -103,14 +103,14 @@ background-size:cover;
     </div>
 <div class="section" id="show">
       <div class="container">
-<img src="<c:url value='/resources/image/j4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/j4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/j4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/j4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/j4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/j4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/j4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/j4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+<img src="<c:url value='/resources/image/ear10.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+<img src="<c:url value='/resources/image/ear9.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+<img src="<c:url value='/resources/image/ear8.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+<img src="<c:url value='/resources/image/ear7.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+<img src="<c:url value='/resources/image/ear6.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+<img src="<c:url value='/resources/image/ear5.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+<img src="<c:url value='/resources/image/ear4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+<img src="<c:url value='/resources/image/ear3.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
 
 </div>
 </div>

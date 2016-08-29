@@ -18,6 +18,12 @@ public class Women {
 		return "home";
 		
 	}
+	@RequestMapping("/home")
+	public String gotoIn()
+	{
+		return "home";
+		
+	}
 	@RequestMapping("/index")
 	public String gotoIndex()
 	{
@@ -74,11 +80,7 @@ public class Women {
 	{
 		return "images";
 	}
-	@RequestMapping("/product")
-	public String gotoprod()
-	{
-		return "product";
-	}
+	
 	@RequestMapping("/bangle")
 	public String gotoban()
 	{

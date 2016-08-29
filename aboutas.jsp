@@ -28,23 +28,13 @@
     <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav navbar-left">
       <li class="active"><a href="index">Home</a></li>
-      <li class="active"><a href="aboutas">Abouts</a></li>
+      <li class="active"><a href="product">Product</a></li>
       <li class="active"><a href="images">Contact</a></li>
       
-  
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="earring">Earrings</a></li>
-          <li><a href="bangle">Bangles</a></li>
-          <li><a href="bracelet">Bracelet</a></li>
-        
-        <li><a href="rings">Rings</a></li>
-      </ul>  
-</ul>
-</li>
-    <ul class="nav navbar-nav navbar-right">
+  </ul>
+      <ul class="nav navbar-nav navbar-right">
       <li><a href="fff"><span class="glyphicon glyphicon-user"></span> Signup</a></li>
-      <li><a href="home"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      <li><a href="/home"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
     </ul>
   </div>
 </div>

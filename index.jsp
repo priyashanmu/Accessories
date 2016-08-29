@@ -40,7 +40,7 @@ footer {
     <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav navbar-left">
       <li class="active"><a href="#">Home</a></li>
-      <li class="active"><a href="aboutas">Abouts</a></li>
+      <li class="active"><a href="aboutas">About us</a></li>
        <li class="active"><a href="images">Contact</a></li>
        <li class="active"><a href="product">Product</a></li>
       
@@ -57,7 +57,7 @@ footer {
 </li>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="fff"><span class="glyphicon glyphicon-user"></span> Signup</a></li>
-      <li><a href="home"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      <li><a href="/home"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
     </ul>
   </div>
 </div>
@@ -81,7 +81,7 @@ footer {
                   <div class="col-md-2">
                     <br>
                     <br>
-                    <h4>Amazing Results</h4>
+                    <h4>Awesome Design</h4>
                     <p>
  make a great decorative item for personal adornment and come in different forms like  rings, bangles</p>
                     <img src="<c:url value='/resources/image/s1.png'/>" class="img-responsive">

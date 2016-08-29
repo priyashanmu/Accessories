@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>earrings</title>
+  <title>bangles</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="<c:url value='/resources/bootstrap-3.3.6-dist/css/bootstrap.min.css'/>">
@@ -76,14 +76,14 @@ background-size:cover;
 <div class="carousel-inner" role="listbox">
     <div class="item active">
      
- <img src="<c:url value='/resources/image/b.jpg'/>"  width="504" height="436">
+ <img src="<c:url value='/resources/image/ban11.jpg'/>"  width="504" height="436">
     </div>
 
     <div class="item">
-      <img src="<c:url value='/resources/image/a6.jpg'/>" width="504" height="236">
+      <img src="<c:url value='/resources/image/ban9.jpg'/>" width="504" height="236">
     </div>
     <div class="item">
-      <img src="<c:url value='/resources/image/jhn.jpg'/>" width="604" height="336">
+      <img src="<c:url value='/resources/image/ban2.jpg'/>" width="604" height="336">
     </div>
      
 
@@ -103,14 +103,14 @@ background-size:cover;
     </div>
 <div class="section" id="show">
       <div class="container">
-<img src="<c:url value='/resources/image/j4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/j4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/j4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/j4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/j4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/j4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/j4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/j4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+<img src="<c:url value='/resources/image/ban7.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+<img src="<c:url value='/resources/image/ban1.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+<img src="<c:url value='/resources/image/ban2.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+<img src="<c:url value='/resources/image/ban3.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+<img src="<c:url value='/resources/image/ban4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+<img src="<c:url value='/resources/image/ban5.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+<img src="<c:url value='/resources/image/ban6.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+<img src="<c:url value='/resources/image/ban10.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
 
 </div>
 </div>
