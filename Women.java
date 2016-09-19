@@ -15,15 +15,10 @@ public class Women {
 	@RequestMapping("/")
 	public String ff()
 	{
-		return "home";
+		return "index";
 		
 	}
-	@RequestMapping("/home")
-	public String gotoIn()
-	{
-		return "home";
-		
-	}
+	
 	@RequestMapping("/index")
 	public String gotoIndex()
 	{
@@ -42,10 +37,15 @@ public class Women {
 		return "f";
 		
 	}
-	@RequestMapping("/fff")
+	/*@RequestMapping("/fff")
 	public String gotosign()
 	{
 		return "fff";
+	}*/
+	@RequestMapping("/admin")
+	public String gotoadmin()
+	{
+		return "admin";
 	}
 	@RequestMapping(value="/checkLogin",method=RequestMethod.POST)
 	public String validateLogin(HttpServletRequest r)
@@ -53,7 +53,7 @@ public class Women {
 		String v=r.getParameter("username");
 		String p=r.getParameter("password");
 		if((v.equals("priya"))&&(p.equals("1234"))){
-			return "index";
+			return "admin";
 		}
 		else
 		{
@@ -95,6 +95,18 @@ public class Women {
 	public String gotoring()
 	{
 		return "rings";
+	}
+
+//Webflow
+	@RequestMapping("/index2")
+	public String gotoin()
+	{
+		return "index2";
+	}
+
+	@RequestMapping("home")
+	public String home(){
+		return "index2";
 	}
 }
 

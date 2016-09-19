@@ -2,14 +2,14 @@ package com.laks.services;
 
 import java.util.List;
 
-import com.access.model.Product1;
+import com.laks.model.Product;
 
 
 
 public interface ProductService {
-	public int insertRow(Product1 p); 
+	public int insertRow(Product prod,String s); 
 	 public List getList();
-	 public Product1 getRowById(int id);
-	 public int updateRow(Product1 p);
+	 public Product getRowById(int id);
+	 public int updateRow(Product prod);
 	 public int deleteRow(int id);
 }

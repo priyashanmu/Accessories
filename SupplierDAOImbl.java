@@ -1,63 +1,76 @@
-package com.access.dao;
+package com.laks.dao;
+
+import java.io.Serializable;
+
 import java.util.List;
 
-import javax.management.Query;
-
-import org.hibernate.Criteria;
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.access.model.Category;
-import com.access.model.Supplier;
-import com.access.model.UserDetails;
-@Repository("supplierDAO")
-public class SupplierDAOImbl implements SupplierDAO{
+import com.laks.model.Supplier;
+
+@Repository("subplier1DAO")
+public class SupplierDAOImbl implements Supplier1DAO{
+
 	@Autowired
 	private SessionFactory sessionFactory;
 
+	@Transactional(propagation=Propagation.SUPPORTS)
+	 public int insertRow(Supplier sub) {
+	  Session session = sessionFactory.openSession();
+	  Transaction tx = session.beginTransaction();
+	 
+	  session.saveOrUpdate(sub);
+	  tx.commit();
+	  Serializable id = session.getIdentifier(sub);
+	  session.close();
+	  return (Integer) id;
+	 }
 
-	public void SupplierDAOImbl(SessionFactory sessionFactory) {
-		this.sessionFactory = sessionFactory;
-	}
+	@Transactional(propagation=Propagation.SUPPORTS)
+	 public List getList() {
+	  Session session = sessionFactory.openSession();
+	  @SuppressWarnings("unchecked")
+	  List pList = session.createQuery("from Supplier").list();
+	  session.close();
+	  return pList;
+	 }
 
-	@Transactional
-	public List<java.util.function.Supplier> list() {
-		@SuppressWarnings("unchecked")
-		List<Supplier> listSupplier = (List<Supplier>) sessionFactory.getCurrentSession()
-				.createCriteria(Supplier.class)
-				.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
+	@Transactional(propagation=Propagation.SUPPORTS)
+	 public Supplier getRowById(int id) {
+	  Session session = sessionFactory.openSession();
+	  Supplier sub = (Supplier) session.load(Supplier.class, id);
+	  return sub;
+	 }
 
-		return listSupplier;
-	}
+	@Transactional(propagation=Propagation.SUPPORTS)
+	 public int updateRow(Supplier sub) {
+	  Session session = sessionFactory.openSession();
+	  Transaction tx = session.beginTransaction();
+	  session.saveOrUpdate(sub);
+	  tx.commit();
+	  Serializable id = session.getIdentifier(sub);
+	  session.close();
+	  return (Integer) id;
+	 }
 
-	@Transactional
-	public void saveOrUpdate(Supplier supplier) {
-		sessionFactory.getCurrentSession().saveOrUpdate(supplier);
-	}
-
-	@Transactional
-	public void delete(String id) {
-		Supplier SupplierToDelete = new Supplier();
-		SupplierToDelete.setId(id);
-		sessionFactory.getCurrentSession().delete(SupplierToDelete);
-	}
-
-	@Transactional
-	public java.util.function.Supplier get(String id) {
-		String hql = "from Supplier where id=" + id;
-		Query query = (Query) sessionFactory.getCurrentSession().createQuery(hql);
-		
-		@SuppressWarnings("unchecked")
-		List<Supplier> listSupplier = (List<Supplier>) ((Criteria) query).list();
-		
-		if (listSupplier != null && !listSupplier.isEmpty()) {
-			return (java.util.function.Supplier) listSupplier.get(0);
-		}
-		
-		return null;
-	}
-
+	@Transactional(propagation=Propagation.SUPPORTS)
+	 public int deleteRow(int id) {
+	  Session session = sessionFactory.openSession();
+	  Transaction tx = session.beginTransaction();
+	  Supplier sub = (Supplier) session.load(Supplier.class, id);
+	  session.delete(sub);
+	  tx.commit();
+	  Serializable ids = session.getIdentifier(sub);
+	  session.close();
+	  return (Integer) ids;
+	 }
 
 }

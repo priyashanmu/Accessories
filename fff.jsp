@@ -11,16 +11,15 @@
   <link rel="stylesheet" href="<c:url value='/resources/bootstrap-3.3.6-dist/css/bootstrap.min.css'/>">
   <script src="<c:url value='/resources/bootstrap-3.3.6-dist/js/jquery.min.js'/>"></script>
   <script src="<c:url value='/resources/bootstrap-3.3.6-dist/js/bootstrap.min.js'/>"></script>
-  
-<style>
+   <style>
 body
 {
 background-image: url("<c:url value='/resources/image/m3.jpg'/>");
   background-repeat: no-repeat; 
 background-size:cover; 
-}
+} 
 
-form
+/* form
 {
 
 width:600px;
@@ -36,13 +35,16 @@ background-color:pink;
 padding:40px;
 margin:40px;
 }
-</style>
+ */ </style> 
 </head>
 <body data-target=".navbar">
 <div>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
+     <div class="navbar-header">
+      <div class="navbar-brand">Women Accessories World</div>
+    </div>
      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
      <span class="icon-bar"></span>
      <span class="icon-bar"></span>
@@ -54,6 +56,8 @@ margin:40px;
     <ul class="nav navbar-nav navbar-left">
       <li class="active"><a href="index">Home</a></li>
       <li class="active"><a href="aboutas">Abouts</a></li>
+      <li class="active"><a href="Product">Product</a></li>
+   
       <li class="active"><a href="images">Contact</a></li>
       
   
@@ -69,48 +73,33 @@ margin:40px;
 </li>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="fff"><span class="glyphicon glyphicon-user"></span> Signup</a></li>
-      <li><a href="home"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      <li><a href="index"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
     </ul>
   </div>
 </div>
 </nav>
   </div>
-<div id="a">
-  <h2>User Details</h2>
-  <form role="form">
-    <div class="form">
-      <label for="User Name"></label>
-      <input type="text" class="form-control" id="User Name" placeholder="Enter user name">
-    </div>
-<br>
-    <div class="form2">
-      <label for="pwd"></label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-    </div>
-<br>
-
- <div class="form2">
-      <label for="pwd"></label>
-      <input type="password" class="form-control" id="repass" placeholder="re type password ">
-    </div>
-<br>
-  
- <div class="form2">
-      <label for="pwd"></label>
-      <input type="email" class="form-control" id="email" placeholder="Email Address ">
-    </div>
-<br>
-  
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
-<br>
-
-    <button type="button" class="btn  btn-success ribbon">Sign in</button>
-  </form>
+ <div class="container" id="wrap">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form action="r" method="post" accept-charset="utf-8" class="form" role="form">   <legend>Sign Up</legend>
+                    <div class="row">
+                        <div class="col-xs-6 col-md-6">
+                            <input type="text" name="firstname" value="" class="form-control input-lg" placeholder="First Name"  />                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <input type="text" name="lastname" value="" class="form-control input-lg" placeholder="Last Name"  />                        </div>
+                    </div>
+                    <input type="text" name="email" value="" class="form-control input-lg" placeholder="Your Email"  />                    
+                    <input type="username" name="username" value="" class="form-control input-lg" placeholder="Username"  />
+                    <input type="password" name="password" value="" class="form-control input-lg" placeholder="Password"  />
+                    <input type="password" name="confirm_password" value="" class="form-control input-lg" placeholder="Confirm Password"  /> 
+                    <button class="btn btn-lg btn-primary btn-block signup-btn" type="submit">Create my account</button>
+            </form>          
+          </div>
+</div>            
 </div>
-
-</body>
+</div>
+ </body>
 </html>
 
   

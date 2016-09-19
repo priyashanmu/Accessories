@@ -1,6 +1,7 @@
-package com.access.dao;
+package com.laks.dao;
 
 import java.io.Serializable;
+
 import java.util.List;
 
 import org.hibernate.HibernateException;
@@ -13,7 +14,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.access.model.Product1;
+import com.laks.model.Product;
 
 @Repository("product1DAO")
 public class ProductDAOImbl implements Product1DAO{
@@ -22,12 +23,13 @@ public class ProductDAOImbl implements Product1DAO{
 	private SessionFactory sessionFactory;
 
 	@Transactional(propagation=Propagation.SUPPORTS)
-	 public int insertRow(Product1 p) {
+	 public int insertRow(Product prod,String s) {
 	  Session session = sessionFactory.openSession();
 	  Transaction tx = session.beginTransaction();
-	  session.saveOrUpdate(p);
+	  prod.setImgs(s);
+	  session.saveOrUpdate(prod);
 	  tx.commit();
-	  Serializable id = session.getIdentifier(p);
+	  Serializable id = session.getIdentifier(prod);
 	  session.close();
 	  return (Integer) id;
 	 }
@@ -42,19 +44,19 @@ public class ProductDAOImbl implements Product1DAO{
 	 }
 
 	@Transactional(propagation=Propagation.SUPPORTS)
-	 public Product1 getRowById(int id) {
+	 public Product getRowById(int id) {
 	  Session session = sessionFactory.openSession();
-	  Product1 p = (Product1) session.load(Product1.class, id);
-	  return p;
+	  Product prod = (Product) session.load(Product.class, id);
+	  return prod;
 	 }
 
 	@Transactional(propagation=Propagation.SUPPORTS)
-	 public int updateRow(Product1 p) {
+	 public int updateRow(Product prod) {
 	  Session session = sessionFactory.openSession();
 	  Transaction tx = session.beginTransaction();
-	  session.saveOrUpdate(p);
+	  session.saveOrUpdate(prod);
 	  tx.commit();
-	  Serializable id = session.getIdentifier(p);
+	  Serializable id = session.getIdentifier(prod);
 	  session.close();
 	  return (Integer) id;
 	 }
@@ -63,10 +65,10 @@ public class ProductDAOImbl implements Product1DAO{
 	 public int deleteRow(int id) {
 	  Session session = sessionFactory.openSession();
 	  Transaction tx = session.beginTransaction();
-	  Product1 p = (Product1) session.load(Product1.class, id);
-	  session.delete(p);
+	  Product prod = (Product) session.load(Product.class, id);
+	  session.delete(prod);
 	  tx.commit();
-	  Serializable ids = session.getIdentifier(p);
+	  Serializable ids = session.getIdentifier(prod);
 	  session.close();
 	  return (Integer) ids;
 	 }

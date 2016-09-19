@@ -8,40 +8,40 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.laks.dao.Product1DAO;
-import com.laks.model.Product;
+import com.laks.dao.Supplier1DAO;
+import com.laks.model.Supplier;
 
 
-@Service("productService")
+@Service("supplierService")
 @Transactional(propagation = Propagation.SUPPORTS)
-public class ProductServiceImbl implements ProductService{
+public class SupplierServiceImbl implements SupplierService{
 	
 	@Autowired
-	private Product1DAO product1DAO;
+	private Supplier1DAO supplier1DAO;
 
-	public int insertRow(Product prod,String s) {
+	public int insertRow(Supplier sub) {
 		// TODO Auto-generated method stub
-		return  product1DAO.insertRow(prod,s);
+		return  supplier1DAO.insertRow(sub);
 		 
 	}
 
 	public List getList() {
 		// TODO Auto-generated method stub
-		return product1DAO.getList();
+		return supplier1DAO.getList();
 	}
 
-	public Product getRowById(int id) {
+	public Supplier getRowById(int id) {
 		// TODO Auto-generated method stub
-		return  product1DAO.getRowById(id);
+		return  supplier1DAO.getRowById(id);
 	}
 
-	public int updateRow(Product prod) {
+	public int updateRow(Supplier sub) {
 		// TODO Auto-generated method stub
-		return  product1DAO.updateRow(prod);
+		return  supplier1DAO.updateRow(sub);
 	}
 
 	public int deleteRow(int id) {
 		// TODO Auto-generated method stub
-		return  product1DAO.deleteRow(id);
+		return  supplier1DAO.deleteRow(id);
 	}
 }

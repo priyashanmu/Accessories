@@ -2,6 +2,7 @@ package com.laks.dao;
 
 import java.io.Serializable;
 
+
 import java.util.List;
 
 import org.hibernate.HibernateException;
@@ -14,22 +15,21 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.laks.model.Category;
+import com.laks.model.UserBean;
 
-@Repository("category1DAO")
-public class CategoryDAOImbl implements Category1DAO{
+@Repository("userBeanDAO")
+public class UserBeanDAOImbl implements UserBeanDAO{
 
 	@Autowired
 	private SessionFactory sessionFactory;
 
 	@Transactional(propagation=Propagation.SUPPORTS)
-	 public int insertRow(Category cat) {
+	 public int insertRow(UserBean ub) {
 	  Session session = sessionFactory.openSession();
 	  Transaction tx = session.beginTransaction();
-	 
-	  session.saveOrUpdate(cat);
+	  session.saveOrUpdate(ub);
 	  tx.commit();
-	  Serializable id = session.getIdentifier(cat);
+	  Serializable id = session.getIdentifier(ub);
 	  session.close();
 	  return (Integer) id;
 	 }
@@ -38,25 +38,25 @@ public class CategoryDAOImbl implements Category1DAO{
 	 public List getList() {
 	  Session session = sessionFactory.openSession();
 	  @SuppressWarnings("unchecked")
-	  List pList = session.createQuery("from Category").list();
+	  List pList = session.createQuery("from UserBean").list();
 	  session.close();
 	  return pList;
 	 }
 
 	@Transactional(propagation=Propagation.SUPPORTS)
-	 public Category getRowById(int id) {
+	 public UserBean getRowById(int id) {
 	  Session session = sessionFactory.openSession();
-	  Category cat = (Category) session.load(Category.class, id);
-	  return cat;
+	  UserBean ub = (UserBean) session.load(UserBean.class, id);
+	  return ub;
 	 }
 
 	@Transactional(propagation=Propagation.SUPPORTS)
-	 public int updateRow(Category cat) {
+	 public int updateRow(UserBean ub) {
 	  Session session = sessionFactory.openSession();
 	  Transaction tx = session.beginTransaction();
-	  session.saveOrUpdate(cat);
+	  session.saveOrUpdate(ub);
 	  tx.commit();
-	  Serializable id = session.getIdentifier(cat);
+	  Serializable id = session.getIdentifier(ub);
 	  session.close();
 	  return (Integer) id;
 	 }
@@ -65,10 +65,10 @@ public class CategoryDAOImbl implements Category1DAO{
 	 public int deleteRow(int id) {
 	  Session session = sessionFactory.openSession();
 	  Transaction tx = session.beginTransaction();
-	  Category cat = (Category) session.load(Category.class, id);
-	  session.delete(cat);
+	  UserBean ub = (UserBean) session.load(UserBean.class, id);
+	  session.delete(ub);
 	  tx.commit();
-	  Serializable ids = session.getIdentifier(cat);
+	  Serializable ids = session.getIdentifier(ub);
 	  session.close();
 	  return (Integer) ids;
 	 }

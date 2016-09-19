@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>images</title>
+<title>contact</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="<c:url value='/resources/bootstrap-3.3.6-dist/css/bootstrap.min.css'/>">
@@ -18,6 +18,9 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
+     <div class="navbar-header">
+      <div class="navbar-brand">Women Accessories World</div>
+    </div>
      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
      <span class="icon-bar"></span>
      <span class="icon-bar"></span>
@@ -29,6 +32,8 @@
     <ul class="nav navbar-nav navbar-left">
       <li class="active"><a href="index">Home</a></li>
       <li class="active"><a href="aboutas">Abouts</a></li>
+      <li class="active"><a href="Product">Product</a></li>
+   
        <li class="active"><a href="images">Contact</a></li>
       
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
@@ -43,7 +48,7 @@
 </li>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="fff"><span class="glyphicon glyphicon-user"></span> Signup</a></li>
-      <li><a href="home"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      <li><a href="index"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
     </ul>
   </div>
 </div>

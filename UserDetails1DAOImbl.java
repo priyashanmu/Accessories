@@ -1,4 +1,5 @@
-package com.access.dao;
+package com.laks.dao;
+/*package com.access.dao;
 
 import java.util.List;
 
@@ -85,3 +86,4 @@ public class UserDetails1DAOImbl implements UserDetails1DAO {
 		return false;
 	}
 }
+*/

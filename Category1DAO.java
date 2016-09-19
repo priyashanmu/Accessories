@@ -1,18 +1,18 @@
-package com.access.dao;
+package com.laks.dao;
 
 import java.util.List;
 
+import com.laks.model.Category;
 
-import org.springframework.stereotype.Repository;
-
-import com.access.model.Category1;
 
 
 public interface Category1DAO {
 
-	public boolean save (Category1 category1);
-	public boolean update (Category1 category1);
-	public boolean delete (Category1 category1);
-	public Category1 get(String id);
-	public List<Category1> list();
-}
+		 public List getList();
+		 public Category getRowById(int id);
+		 public int updateRow(Category cat);
+		 public int deleteRow(int id);
+		 public int insertRow(Category cat);
+	}
+
+

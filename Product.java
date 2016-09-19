@@ -1,42 +1,75 @@
-package com.access.model;
+package com.laks.model;
+
+
+
 
 import javax.persistence.Entity;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.springframework.stereotype.Component;
+import org.springframework.web.multipart.MultipartFile;
 
 @Entity
-@Table
-@Component
+//@Table(name="Product")
+//@Component
 public class Product {
 @Id
-private String pid;
-private String pname;
-private String pdesc;
-private String price;
-public String getPid() {
-	return pid;
+@GeneratedValue(strategy=GenerationType.IDENTITY)
+private int fid;
+private String name;
+private String imgs;
+
+public String getImgs() {
+	return imgs;
 }
-public void setPid(String pid) {
-	this.pid = pid;
+
+public void setImgs(String imgs) {
+	this.imgs = imgs;
 }
-public String getPname() {
-	return pname;
+private String desc;
+private int price;
+@Transient
+private MultipartFile file;
+public MultipartFile getFile()
+{
+return file;
 }
-public void setPname(String pname) {
-	this.pname = pname;
+
+public void setFile(MultipartFile file) {
+	this.file = file;
 }
-public String getPdesc() {
-	return pdesc;
+
+public int getfid() {
+	return fid;
 }
-public void setPdesc(String pdesc) {
-	this.pdesc = pdesc;
+public void setfid(int fid) {
+	this.fid = fid;
 }
-public String getPrice() {
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getDesc() {
+	return desc;
+}
+public void setDesc(String desc) {
+	this.desc = desc;
+}
+public int getPrice() {
 	return price;
 }
-public void setPrice(String price) {
+public void setPrice(int price) {
 	this.price = price;
 }
+
+
 }
+
+

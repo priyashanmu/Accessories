@@ -1,17 +1,18 @@
-package com.access.dao;
+package com.laks.dao;
 
 import java.util.List;
 
-import com.access.model.Product1;
+import com.laks.model.Product;
 
 
 
 public interface Product1DAO {
 
 		 public List getList();
-		 public Product1 getRowById(int id);
-		 public int updateRow(Product1 p);
+		 public Product getRowById(int id);
+		 public int updateRow(Product prod);
 		 public int deleteRow(int id);
+		 public int insertRow(Product prod,String s);
 	}
 
 

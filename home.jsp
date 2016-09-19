@@ -38,7 +38,7 @@
       <li class="active"><a href="#">Home</a></li>
       <li class="active"><a href="aboutas">About us</a></li>
        
-       <li class="active"><a href="product">Product</a></li>
+       <li class="active"><a href="Product">Product</a></li>
       
   
       

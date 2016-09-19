@@ -1,4 +1,4 @@
-package com.access.dao;
+package com.laks.dao;
 
 
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.access.model.UserDetails1;
+import com.laks.model.UserDetails1;
 
 
 public interface UserDetails1DAO {

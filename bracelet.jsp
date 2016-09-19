@@ -12,19 +12,22 @@
   <script src="<c:url value='/resources/bootstrap-3.3.6-dist/js/bootstrap.min.js'/>"></script>
   
   </head>
-  <style>
+ <!--  <style>
 body
 {
 background-image: url("<c:url value='/resources/image/m3.jpg'/>");
   background-repeat: no-repeat; 
 background-size:cover; 
 }
-</style>
+</style> -->
 <body data-target=".navbar">
 <div>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
+     <div class="navbar-header">
+      <div class="navbar-brand">Women Accessories World</div>
+    </div>
      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
      <span class="icon-bar"></span>
      <span class="icon-bar"></span>
@@ -36,6 +39,8 @@ background-size:cover;
     <ul class="nav navbar-nav navbar-left">
       <li class="active"><a href="index">Home</a></li>
       <li class="active"><a href="aboutas">Abouts</a></li>
+      <li class="active"><a href="Product">Product</a></li>
+   
       <li class="active"><a href="images">Contact</a></li>
       
   
@@ -51,7 +56,7 @@ background-size:cover;
 </li>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="fff"><span class="glyphicon glyphicon-user"></span> Signup</a></li>
-      <li><a href="home"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      <li><a href="index"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
     </ul>
   </div>
 </div>
@@ -76,14 +81,14 @@ background-size:cover;
 <div class="carousel-inner" role="listbox">
     <div class="item active">
      
- <img src="<c:url value='/resources/image/let7.jpg'/>"  width="504" height="436">
+ <img src="<c:url value='/resources/image/let1.jpg'/>"  width="504" height="236">
     </div>
 
     <div class="item">
-      <img src="<c:url value='/resources/image/let6.jpg'/>" width="504" height="236">
+      <img src="<c:url value='/resources/image/let2.jpg'/>" width="504" height="236">
     </div>
     <div class="item">
-      <img src="<c:url value='/resources/image/let10.jpg'/>" width="604" height="336">
+      <img src="<c:url value='/resources/image/let4.jpg'/>" width="504" height="236">
     </div>
      
 
@@ -103,17 +108,133 @@ background-size:cover;
     </div>
 <div class="section" id="show">
       <div class="container">
-<img src="<c:url value='/resources/image/let1.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/let2.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/let3.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/let4.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/let5.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/let6.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/let7.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
-<img src="<c:url value='/resources/image/let8.jpg'/>" class="img-thumbnails" width="304" height="236">&nbsp&nbsp&nbsp&nbsp
+    
+    <<div id="products" class="row list-group">
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img src="<c:url value='/resources/image/let1.jpg'/>" class="img-thumbnails"  width="304" height="236">
+                    
+ <div class="caption">
+                     <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $200.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success"#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="products" class="row list-group">
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img src="<c:url value='/resources/image/let6.jpg'/>" class="img-thumbnails"  width="304" height="236">
+                    
+ <div class="caption">
+                     <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $250.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success"#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="products" class="row list-group">
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img src="<c:url value='/resources/image/let3.jpg'/>" class="img-thumbnails"  width="304" height="236">
+                    
+ <div class="caption">
+                     <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $280.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success"#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="products" class="row list-group">
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img src="<c:url value='/resources/image/let8.jpg'/>" class="img-thumbnails"  width="304" height="236">
+                    
+ <div class="caption">
+                     <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $220.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success"#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="products" class="row list-group">
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img src="<c:url value='/resources/image/let10.jpg'/>" class="img-thumbnails"  width="304" height="236">
+                    
+ <div class="caption">
+                     <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $250.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success"#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="products" class="row list-group">
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img src="<c:url value='/resources/image/let7.jpg'/>" class="img-thumbnails"  width="304" height="236">
+                    
+ <div class="caption">
+                     <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $100.000</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success"#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+  <div class="row">
+  <hr>
+    <div class="col-lg-12">
+      <div class="col-md-8">
+        <a href="#">Terms of Service</a> | <a href="#">Privacy</a>    
+      </div>
+      <div class="col-md-4">
+        <p class="muted pull-right">© 2016 Web site Name. Women Accessories</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        
+        
 
-</div>
-</div>
+
 </body>
 </html>
   
